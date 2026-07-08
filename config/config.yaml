@@ -1,0 +1,30 @@
+# =========================================================
+# config.yaml
+# Configuración central del proyecto Forecasting-COPUSD
+# =========================================================
+
+data:
+  raw_path: "data/raw/tasa_cop_usd_1993-2025.csv"
+  date_column: "date"
+  price_column: "COP_USD"
+
+output:
+  processed_dir: "data/processed"
+  forecasts_dir: "results/forecasts"
+  simulations_dir: "results/simulations"
+  metrics_dir: "results/metrics"
+  figures_dir: "results/figures"
+  logs_dir: "logs"
+
+model:
+  # true  -> Random Walk con drift (usa la media histórica de retornos)
+  # false -> Random Walk sin drift (mu = 0, pronóstico "puro")
+  with_drift: true
+  horizon_days: 30
+  n_simulations: 1000000
+  seed: 42
+  confidence_levels: [0.80, 0.90, 0.95]
+
+logging:
+  level: "INFO"
+  log_file: "logs/forecast.log"

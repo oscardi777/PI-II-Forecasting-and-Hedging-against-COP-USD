@@ -1,0 +1,35 @@
+2026-07-07 18:49:39,967 | INFO     | forecasting_copusd.data_loader | Cargando dataset desde 'data/raw/tasa_cop_usd_1993-2025.csv'
+2026-07-07 18:49:39,995 | INFO     | forecasting_copusd.data_loader | Dataset cargado: 8360 observaciones (1993-01-01 a 2025-12-30)
+2026-07-07 18:49:40,001 | INFO     | forecasting_copusd.preprocessing | Validación de datos completada.
+2026-07-07 18:49:40,004 | INFO     | forecasting_copusd.preprocessing | Preprocesamiento completado: 8359 retornos logarítmicos calculados.
+2026-07-07 18:49:40,004 | INFO     | forecasting_copusd.random_walk | Parámetros estimados -> mu=0.000000, sigma=0.007029, with_drift=False
+2026-07-07 18:49:40,014 | INFO     | forecasting_copusd.monte_carlo | Monte Carlo finalizado: 10000 simulaciones, horizonte de 30 días.
+2026-07-07 18:49:40,054 | INFO     | forecasting_copusd.evaluation | Intervalos de confianza calculados para niveles: [0.8, 0.9, 0.95]
+2026-07-07 18:49:41,923 | INFO     | forecasting_copusd.visualization | Gráfico de pronóstico guardado en 'results/figures\forecast_fan_chart.png'.
+2026-07-07 18:49:42,179 | INFO     | forecasting_copusd.evaluation | Resultados guardados en 'results/simulations\monte_carlo_simulations.csv' y 'results/forecasts\confidence_intervals.csv'.
+2026-07-07 18:49:42,180 | INFO     | forecasting_copusd | Ejecución finalizada correctamente.
+2026-07-07 18:51:26,111 | INFO     | forecasting_copusd.data_loader | Cargando dataset desde 'data/raw/tasa_cop_usd_1993-2025.csv'
+2026-07-07 18:51:26,124 | INFO     | forecasting_copusd.data_loader | Dataset cargado: 8360 observaciones (1993-01-01 a 2025-12-30)
+2026-07-07 18:51:26,129 | INFO     | forecasting_copusd.preprocessing | Validación de datos completada.
+2026-07-07 18:51:26,131 | INFO     | forecasting_copusd.preprocessing | Preprocesamiento completado: 8359 retornos logarítmicos calculados.
+2026-07-07 18:51:26,131 | INFO     | forecasting_copusd.random_walk | Parámetros estimados -> mu=0.000196, sigma=0.007029, with_drift=True
+2026-07-07 18:51:26,141 | INFO     | forecasting_copusd.monte_carlo | Monte Carlo finalizado: 10000 simulaciones, horizonte de 30 días.
+2026-07-07 18:51:26,179 | INFO     | forecasting_copusd.evaluation | Intervalos de confianza calculados para niveles: [0.8, 0.9, 0.95]
+2026-07-07 18:51:26,682 | INFO     | forecasting_copusd.visualization | Gráfico de pronóstico guardado en 'results/figures\forecast_fan_chart.png'.
+2026-07-07 18:51:27,061 | INFO     | forecasting_copusd.evaluation | Resultados guardados en 'results/simulations\monte_carlo_simulations.csv' y 'results/forecasts\confidence_intervals.csv'.
+2026-07-07 18:51:27,062 | INFO     | forecasting_copusd | Ejecución finalizada correctamente.
+2026-07-07 18:55:20,522 | INFO     | forecasting_copusd.data_loader | Cargando dataset desde 'data/raw/tasa_cop_usd_1993-2025.csv'
+2026-07-07 18:55:20,534 | INFO     | forecasting_copusd.data_loader | Dataset cargado: 8360 observaciones (1993-01-01 a 2025-12-30)
+2026-07-07 18:55:20,542 | INFO     | forecasting_copusd.preprocessing | Validación de datos completada.
+2026-07-07 18:55:20,544 | INFO     | forecasting_copusd.preprocessing | Preprocesamiento completado: 8359 retornos logarítmicos calculados.
+2026-07-07 18:55:20,544 | INFO     | forecasting_copusd.random_walk | Parámetros estimados -> mu=0.000196, sigma=0.007029, with_drift=True
+2026-07-07 18:56:22,392 | INFO     | forecasting_copusd.data_loader | Cargando dataset desde 'data/raw/tasa_cop_usd_1993-2025.csv'
+2026-07-07 18:56:22,412 | INFO     | forecasting_copusd.data_loader | Dataset cargado: 8360 observaciones (1993-01-01 a 2025-12-30)
+2026-07-07 18:56:22,420 | INFO     | forecasting_copusd.preprocessing | Validación de datos completada.
+2026-07-07 18:56:22,423 | INFO     | forecasting_copusd.preprocessing | Preprocesamiento completado: 8359 retornos logarítmicos calculados.
+2026-07-07 18:56:22,423 | INFO     | forecasting_copusd.random_walk | Parámetros estimados -> mu=0.000196, sigma=0.007029, with_drift=True
+2026-07-07 18:56:23,270 | INFO     | forecasting_copusd.monte_carlo | Monte Carlo finalizado: 1000000 simulaciones, horizonte de 30 días.
+2026-07-07 18:56:28,854 | INFO     | forecasting_copusd.evaluation | Intervalos de confianza calculados para niveles: [0.8, 0.9, 0.95]
+2026-07-07 18:56:29,606 | INFO     | forecasting_copusd.visualization | Gráfico de pronóstico guardado en 'results/figures\forecast_fan_chart.png'.
+2026-07-07 18:57:01,168 | INFO     | forecasting_copusd.evaluation | Resultados guardados en 'results/simulations\monte_carlo_simulations.csv' y 'results/forecasts\confidence_intervals.csv'.
+2026-07-07 18:57:01,169 | INFO     | forecasting_copusd | Ejecución finalizada correctamente.
