@@ -19,11 +19,32 @@ output:
 model:
   # true  -> Random Walk con drift (usa la media histórica de retornos)
   # false -> Random Walk sin drift (mu = 0, pronóstico "puro")
-  with_drift: true
+  with_drift: false
   horizon_days: 30
-  n_simulations: 1000000
+  n_simulations: 10000
   seed: 42
   confidence_levels: [0.80, 0.90, 0.95]
+
+  # Ventana de estimación de mu (drift) y sigma (volatilidad diaria).
+  #   null   -> usa TODO el histórico de retornos disponible hasta la fecha de corte
+  #   entero -> usa solo los últimos N retornos logarítmicos antes de la fecha de corte
+  # Ejemplo: 252 ~ 1 año hábil, 756 ~ 3 años hábiles.
+  estimation_window_days: 30
+
+backtest:
+  # Si enabled: true, el pronóstico se genera desde una fecha de corte anterior
+  # al final del dataset, dejando datos reales "ocultos" (posteriores al corte)
+  # para comparar contra las simulaciones y calcular métricas de error.
+  enabled: true
+
+  # Fecha de corte en formato "YYYY-MM-DD". Todo lo posterior a esta fecha
+  # se trata como "dato real" para validar.
+  #   null -> se calcula automáticamente dejando los últimos horizon_days
+  #           registros del dataset como conjunto de prueba.
+  train_end_date: "2025-06-30"
+
+  # Métricas a calcular: cualquier combinación de "mae", "mse", "rmse", "mape"
+  metrics: ["mae", "mse", "rmse", "mape"]
 
 logging:
   level: "INFO"

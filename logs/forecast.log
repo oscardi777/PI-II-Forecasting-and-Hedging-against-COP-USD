@@ -33,3 +33,79 @@
 2026-07-07 18:56:29,606 | INFO     | forecasting_copusd.visualization | Gráfico de pronóstico guardado en 'results/figures\forecast_fan_chart.png'.
 2026-07-07 18:57:01,168 | INFO     | forecasting_copusd.evaluation | Resultados guardados en 'results/simulations\monte_carlo_simulations.csv' y 'results/forecasts\confidence_intervals.csv'.
 2026-07-07 18:57:01,169 | INFO     | forecasting_copusd | Ejecución finalizada correctamente.
+2026-07-08 11:33:04,208 | INFO     | forecasting_copusd.data_loader | Cargando dataset desde 'data/raw/tasa_cop_usd_2020-2025.csv'
+2026-07-08 11:33:04,223 | INFO     | forecasting_copusd.data_loader | Dataset cargado: 1471 observaciones (2020-01-02 a 2025-12-30)
+2026-07-08 11:33:04,236 | INFO     | forecasting_copusd.preprocessing | Validación de datos completada.
+2026-07-08 11:33:04,240 | INFO     | forecasting_copusd.preprocessing | Preprocesamiento completado: 1470 retornos logarítmicos calculados.
+2026-07-08 11:33:04,241 | INFO     | forecasting_copusd.random_walk | Parámetros estimados -> mu=0.000101, sigma=0.008704, with_drift=True
+2026-07-08 11:33:05,359 | INFO     | forecasting_copusd.monte_carlo | Monte Carlo finalizado: 1000000 simulaciones, horizonte de 30 días.
+2026-07-08 11:33:13,341 | INFO     | forecasting_copusd.evaluation | Intervalos de confianza calculados para niveles: [0.8, 0.9, 0.95]
+2026-07-08 11:33:16,655 | INFO     | forecasting_copusd.visualization | Gráfico de pronóstico guardado en 'results/figures\forecast_fan_chart.png'.
+2026-07-08 11:33:46,788 | INFO     | forecasting_copusd.evaluation | Resultados guardados en 'results/simulations\monte_carlo_simulations.csv' y 'results/forecasts\confidence_intervals.csv'.
+2026-07-08 11:33:46,790 | INFO     | forecasting_copusd | Ejecución finalizada correctamente.
+2026-07-08 11:35:10,736 | INFO     | forecasting_copusd.data_loader | Cargando dataset desde 'data/raw/tasa_cop_usd_2020-2025.csv'
+2026-07-08 11:35:10,759 | INFO     | forecasting_copusd.data_loader | Dataset cargado: 1471 observaciones (2020-01-02 a 2025-12-30)
+2026-07-08 11:35:10,772 | INFO     | forecasting_copusd.preprocessing | Validación de datos completada.
+2026-07-08 11:35:10,776 | INFO     | forecasting_copusd.preprocessing | Preprocesamiento completado: 1470 retornos logarítmicos calculados.
+2026-07-08 11:35:10,777 | INFO     | forecasting_copusd.random_walk | Parámetros estimados -> mu=0.000000, sigma=0.008704, with_drift=False
+2026-07-08 11:35:10,790 | INFO     | forecasting_copusd.monte_carlo | Monte Carlo finalizado: 10000 simulaciones, horizonte de 30 días.
+2026-07-08 11:35:10,868 | INFO     | forecasting_copusd.evaluation | Intervalos de confianza calculados para niveles: [0.8, 0.9, 0.95]
+2026-07-08 11:35:11,490 | INFO     | forecasting_copusd.visualization | Gráfico de pronóstico guardado en 'results/figures\forecast_fan_chart.png'.
+2026-07-08 11:35:11,797 | INFO     | forecasting_copusd.evaluation | Resultados guardados en 'results/simulations\monte_carlo_simulations.csv' y 'results/forecasts\confidence_intervals.csv'.
+2026-07-08 11:35:11,799 | INFO     | forecasting_copusd | Ejecución finalizada correctamente.
+2026-07-09 17:57:20,333 | INFO     | forecasting_copusd.data_loader | Cargando dataset desde 'data/raw/tasa_cop_usd_1993-2025.csv'
+2026-07-09 17:57:20,449 | INFO     | forecasting_copusd.data_loader | Dataset cargado: 8360 observaciones (1993-01-01 a 2025-12-30)
+2026-07-09 17:57:20,454 | INFO     | forecasting_copusd.preprocessing | Validación de datos completada.
+2026-07-09 17:57:20,458 | INFO     | forecasting_copusd.backtesting | Backtest -> train: 8114 obs (hasta 2024-12-31), test: 246 obs (2025-01-02 a 2025-12-30)
+2026-07-09 17:57:20,464 | INFO     | forecasting_copusd.preprocessing | Preprocesamiento completado: 8113 retornos logarítmicos calculados.
+2026-07-09 17:57:20,465 | INFO     | forecasting_copusd.preprocessing | Ventana de estimación: últimos 252 retornos (2023-12-20 a 2024-12-31).
+2026-07-09 17:57:20,465 | INFO     | forecasting_copusd.random_walk | Parámetros estimados -> mu=0.000448, sigma=0.007059, with_drift=True
+2026-07-09 17:57:20,495 | INFO     | forecasting_copusd.monte_carlo | Monte Carlo finalizado: 10000 simulaciones, horizonte de 30 días.
+2026-07-09 17:57:20,550 | INFO     | forecasting_copusd.evaluation | Intervalos de confianza calculados para niveles: [0.8, 0.9, 0.95]
+2026-07-09 17:57:23,815 | INFO     | forecasting_copusd.visualization | Gráfico de pronóstico guardado en 'results/figures\forecast_fan_chart.png'.
+2026-07-09 17:57:24,086 | INFO     | forecasting_copusd.evaluation | Resultados guardados en 'results/simulations\monte_carlo_simulations.csv' y 'results/forecasts\confidence_intervals.csv'.
+2026-07-09 17:57:24,094 | INFO     | forecasting_copusd.backtesting | Backtest evaluado sobre 28 fechas coincidentes (2025-01-02 a 2025-02-11).
+2026-07-09 17:57:24,096 | INFO     | forecasting_copusd.backtesting | Métricas de backtest guardadas en 'results/metrics\backtest_metrics.csv'.
+2026-07-09 17:57:24,100 | INFO     | forecasting_copusd | Ejecución finalizada correctamente.
+2026-07-09 17:57:59,283 | INFO     | forecasting_copusd.data_loader | Cargando dataset desde 'data/raw/tasa_cop_usd_1993-2025.csv'
+2026-07-09 17:57:59,297 | INFO     | forecasting_copusd.data_loader | Dataset cargado: 8360 observaciones (1993-01-01 a 2025-12-30)
+2026-07-09 17:57:59,301 | INFO     | forecasting_copusd.preprocessing | Validación de datos completada.
+2026-07-09 17:57:59,304 | INFO     | forecasting_copusd.backtesting | Backtest -> train: 8114 obs (hasta 2024-12-31), test: 246 obs (2025-01-02 a 2025-12-30)
+2026-07-09 17:57:59,309 | INFO     | forecasting_copusd.preprocessing | Preprocesamiento completado: 8113 retornos logarítmicos calculados.
+2026-07-09 17:57:59,309 | INFO     | forecasting_copusd.preprocessing | Ventana de estimación: últimos 30 retornos (2024-11-19 a 2024-12-31).
+2026-07-09 17:57:59,310 | INFO     | forecasting_copusd.random_walk | Parámetros estimados -> mu=0.000023, sigma=0.004915, with_drift=True
+2026-07-09 17:57:59,322 | INFO     | forecasting_copusd.monte_carlo | Monte Carlo finalizado: 10000 simulaciones, horizonte de 30 días.
+2026-07-09 17:57:59,368 | INFO     | forecasting_copusd.evaluation | Intervalos de confianza calculados para niveles: [0.8, 0.9, 0.95]
+2026-07-09 17:57:59,814 | INFO     | forecasting_copusd.visualization | Gráfico de pronóstico guardado en 'results/figures\forecast_fan_chart.png'.
+2026-07-09 17:58:00,073 | INFO     | forecasting_copusd.evaluation | Resultados guardados en 'results/simulations\monte_carlo_simulations.csv' y 'results/forecasts\confidence_intervals.csv'.
+2026-07-09 17:58:00,079 | INFO     | forecasting_copusd.backtesting | Backtest evaluado sobre 28 fechas coincidentes (2025-01-02 a 2025-02-11).
+2026-07-09 17:58:00,080 | INFO     | forecasting_copusd.backtesting | Métricas de backtest guardadas en 'results/metrics\backtest_metrics.csv'.
+2026-07-09 17:58:00,084 | INFO     | forecasting_copusd | Ejecución finalizada correctamente.
+2026-07-09 17:59:03,758 | INFO     | forecasting_copusd.data_loader | Cargando dataset desde 'data/raw/tasa_cop_usd_1993-2025.csv'
+2026-07-09 17:59:03,772 | INFO     | forecasting_copusd.data_loader | Dataset cargado: 8360 observaciones (1993-01-01 a 2025-12-30)
+2026-07-09 17:59:03,778 | INFO     | forecasting_copusd.preprocessing | Validación de datos completada.
+2026-07-09 17:59:03,780 | INFO     | forecasting_copusd.backtesting | Backtest -> train: 8235 obs (hasta 2025-06-27), test: 125 obs (2025-07-01 a 2025-12-30)
+2026-07-09 17:59:03,784 | INFO     | forecasting_copusd.preprocessing | Preprocesamiento completado: 8234 retornos logarítmicos calculados.
+2026-07-09 17:59:03,785 | INFO     | forecasting_copusd.preprocessing | Ventana de estimación: últimos 30 retornos (2025-05-15 a 2025-06-27).
+2026-07-09 17:59:03,785 | INFO     | forecasting_copusd.random_walk | Parámetros estimados -> mu=-0.000657, sigma=0.006491, with_drift=True
+2026-07-09 17:59:03,794 | INFO     | forecasting_copusd.monte_carlo | Monte Carlo finalizado: 10000 simulaciones, horizonte de 30 días.
+2026-07-09 17:59:03,832 | INFO     | forecasting_copusd.evaluation | Intervalos de confianza calculados para niveles: [0.8, 0.9, 0.95]
+2026-07-09 17:59:04,292 | INFO     | forecasting_copusd.visualization | Gráfico de pronóstico guardado en 'results/figures\forecast_fan_chart.png'.
+2026-07-09 17:59:04,551 | INFO     | forecasting_copusd.evaluation | Resultados guardados en 'results/simulations\monte_carlo_simulations.csv' y 'results/forecasts\confidence_intervals.csv'.
+2026-07-09 17:59:04,558 | INFO     | forecasting_copusd.backtesting | Backtest evaluado sobre 28 fechas coincidentes (2025-07-01 a 2025-08-08).
+2026-07-09 17:59:04,559 | INFO     | forecasting_copusd.backtesting | Métricas de backtest guardadas en 'results/metrics\backtest_metrics.csv'.
+2026-07-09 17:59:04,563 | INFO     | forecasting_copusd | Ejecución finalizada correctamente.
+2026-07-09 17:59:32,933 | INFO     | forecasting_copusd.data_loader | Cargando dataset desde 'data/raw/tasa_cop_usd_1993-2025.csv'
+2026-07-09 17:59:32,947 | INFO     | forecasting_copusd.data_loader | Dataset cargado: 8360 observaciones (1993-01-01 a 2025-12-30)
+2026-07-09 17:59:32,950 | INFO     | forecasting_copusd.preprocessing | Validación de datos completada.
+2026-07-09 17:59:32,952 | INFO     | forecasting_copusd.backtesting | Backtest -> train: 8235 obs (hasta 2025-06-27), test: 125 obs (2025-07-01 a 2025-12-30)
+2026-07-09 17:59:32,957 | INFO     | forecasting_copusd.preprocessing | Preprocesamiento completado: 8234 retornos logarítmicos calculados.
+2026-07-09 17:59:32,957 | INFO     | forecasting_copusd.preprocessing | Ventana de estimación: últimos 30 retornos (2025-05-15 a 2025-06-27).
+2026-07-09 17:59:32,957 | INFO     | forecasting_copusd.random_walk | Parámetros estimados -> mu=0.000000, sigma=0.006491, with_drift=False
+2026-07-09 17:59:32,968 | INFO     | forecasting_copusd.monte_carlo | Monte Carlo finalizado: 10000 simulaciones, horizonte de 30 días.
+2026-07-09 17:59:33,011 | INFO     | forecasting_copusd.evaluation | Intervalos de confianza calculados para niveles: [0.8, 0.9, 0.95]
+2026-07-09 17:59:33,485 | INFO     | forecasting_copusd.visualization | Gráfico de pronóstico guardado en 'results/figures\forecast_fan_chart.png'.
+2026-07-09 17:59:33,754 | INFO     | forecasting_copusd.evaluation | Resultados guardados en 'results/simulations\monte_carlo_simulations.csv' y 'results/forecasts\confidence_intervals.csv'.
+2026-07-09 17:59:33,759 | INFO     | forecasting_copusd.backtesting | Backtest evaluado sobre 28 fechas coincidentes (2025-07-01 a 2025-08-08).
+2026-07-09 17:59:33,761 | INFO     | forecasting_copusd.backtesting | Métricas de backtest guardadas en 'results/metrics\backtest_metrics.csv'.
+2026-07-09 17:59:33,765 | INFO     | forecasting_copusd | Ejecución finalizada correctamente.

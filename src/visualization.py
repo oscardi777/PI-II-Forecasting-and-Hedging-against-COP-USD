@@ -20,14 +20,17 @@ logger = logging.getLogger("forecasting_copusd.visualization")
 def plot_forecast_fan(historical_df: pd.DataFrame, simulations: np.ndarray,
                        intervals: pd.DataFrame, config: dict,
                        date_col: str = "date", price_col: str = "COP_USD",
-                       last_n_hist: int = 250, n_sample_paths: int = 150) -> str:
+                       last_n_hist: int = 250, n_sample_paths: int = 150,
+                       test_df: pd.DataFrame = None) -> str:
     """
     Genera y guarda el gráfico de pronóstico.
 
     Parameters
     ----------
     historical_df : pd.DataFrame
-        Serie histórica completa (ya validada), con columnas [date_col, price_col].
+        Serie histórica usada como entrenamiento (ya validada), con
+        columnas [date_col, price_col]. Si hay backtest activo, es el
+        tramo de datos ANTERIOR a la fecha de corte.
     simulations : np.ndarray
         Matriz (n_simulations, horizon + 1) de trayectorias simuladas.
     intervals : pd.DataFrame
@@ -39,6 +42,10 @@ def plot_forecast_fan(historical_df: pd.DataFrame, simulations: np.ndarray,
         Cantidad de días históricos recientes a mostrar antes del pronóstico.
     n_sample_paths : int
         Cantidad de trayectorias individuales a dibujar como "rayos".
+    test_df : pd.DataFrame, opcional
+        Datos reales posteriores a la fecha de corte (solo si el backtest
+        está habilitado). Si se provee, se dibujan como referencia para
+        comparar visualmente contra el abanico simulado.
 
     Returns
     -------
@@ -85,6 +92,12 @@ def plot_forecast_fan(historical_df: pd.DataFrame, simulations: np.ndarray,
     # --- Mediana proyectada ---
     ax.plot(future_dates, intervals["median"], color="#e63946",
             linewidth=1.8, label="Mediana simulada", zorder=3)
+
+    # --- Dato real (backtest): permite comparar visualmente el pronóstico ---
+    if test_df is not None and not test_df.empty:
+        ax.plot(test_df[date_col], test_df[price_col], color="#111111",
+                linewidth=1.6, linestyle="-", marker="o", markersize=2.5,
+                label="Real (backtest)", zorder=5)
 
     # --- Punto de origen ("lente" desde donde se abre el abanico) ---
     ax.scatter([last_date], [last_price], color="#1f3b57", s=40, zorder=4)
